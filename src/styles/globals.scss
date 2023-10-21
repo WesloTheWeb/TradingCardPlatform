@@ -1,0 +1,16 @@
+@import '../variables.scss';
+
+body {
+  margin: 0;
+  background-color: $background;
+  font-size: 1.43rem;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #fff;
+}
+
+button {
+  cursor: pointer;
+}

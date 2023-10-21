@@ -1,0 +1,38 @@
+@import '../../variables.scss';
+
+.container {
+    position: relative;  
+    padding: 5rem 3rem;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: url('/assets/images/backdrop.jpeg');
+        background-position: center; // Center the image
+        background-repeat: no-repeat; // Prevent the image from repeating
+        background-size: cover; // Resize the image to cover the entire container
+        opacity: 0.5; // Adjust this value for the desired opacity
+        z-index: -1; // Places the image below the text content
+    }
+}
+
+.welcomeBlurbContainer {
+    background: rgba(19, 26, 40, 0.8); // Using RGBA for background opacity
+    // background: #131a28;
+    padding: 2rem;
+    // opacity: .8;
+    border-radius: 15px;
+    margin: 1.5rem 0;
+
+    h3 {
+        color: $welcomeTextHeader;
+    }
+
+    p {
+        color: $welcomeTextColor;
+    }
+}
